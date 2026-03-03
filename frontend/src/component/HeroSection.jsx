@@ -13,7 +13,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="inline-block bg-blue-600/40 backdrop-blur px-4 py-1 rounded-full text-sm mb-8"
         >
-          ISP Terbaik 2025
+          ISP Terbaik 2026
         </motion.div>
 
         {/* Title */}

@@ -9,13 +9,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+    <nav className="backdrop-black-lg text-black shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <div className="bg-white p-2 rounded-md mr-3">
-            <span className="text-blue-900 font-bold text-xl">TELEPORT</span>
-            <span className="text-orange-500 font-bold">.NET</span>
+          <div className="p-2 rounded-md mr-3">
+            <img src="/Logo2.png" alt="Logo" className="h-14 w-auto" />
           </div>
         </div>
 
