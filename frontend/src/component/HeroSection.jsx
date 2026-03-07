@@ -2,9 +2,15 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
-      
-      <div className="max-w-6xl mx-auto px-6 pt-28 pb-24">
+    <section
+      className="relative bg-cover bg-center bg-no-repeat text-white min-h-screen"
+      style={{ backgroundImage: "url('/bg-hero.png')" }}
+    >
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-blue-900/60 to-transparent"></div>
+
+      {/* Content */}
+      <div className="relative max-w-6xl mx-auto px-6 pt-28 pb-24">
         
         {/* Badge */}
         <motion.div
@@ -24,9 +30,7 @@ export default function HeroSection() {
           className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight"
         >
           Anytime, Anywhere <br />
-          <span className="text-blue-300">
-            Any Connectivity.
-          </span>
+          <span className="text-blue-300">Any Connectivity.</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -59,7 +63,7 @@ export default function HeroSection() {
       </div>
 
       {/* Statistik Box */}
-      <div className="bg-white text-blue-900">
+      <div className="relative bg-white text-blue-900">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center py-10 px-6">
           <div>
             <h3 className="text-2xl font-bold">98%</h3>
@@ -79,7 +83,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
     </section>
   );
 }
